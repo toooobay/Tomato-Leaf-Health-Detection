@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Frontend dependencies/build
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+.vercel/
+
+# Local datasets and test image folders
+TomatoDataset/
+archive (3)/
+data_test_buatUI/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

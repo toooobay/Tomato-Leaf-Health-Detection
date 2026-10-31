@@ -1,0 +1,17 @@
+.empty-state {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: var(--space-md);
+  min-height: 70vh;
+  padding: var(--space-xl);
+  text-align: center;
+}
+
+.empty-state svg {
+  color: var(--color-accent);
+}
+
+.empty-state p {
+  max-width: 34rem;
+}

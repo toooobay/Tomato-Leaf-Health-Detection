@@ -1,0 +1,99 @@
+.guide-examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.example-card {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.example-placeholder {
+  display: grid;
+  min-height: 14rem;
+  place-items: center;
+  border-radius: var(--radius-md);
+  background: var(--color-paper-tint);
+}
+
+.example-good .example-placeholder {
+  color: var(--color-healthy);
+}
+
+.example-bad .example-placeholder {
+  color: var(--color-unhealthy);
+}
+
+.example-bad-photo,
+.example-good-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 18rem;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.step-grid div {
+  display: grid;
+  gap: var(--space-xs);
+  min-width: 0;
+  padding: var(--space-md);
+  border: var(--rule-thin) solid var(--color-rule);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-tint);
+}
+
+.step-grid span {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-paper);
+  font-weight: 800;
+}
+
+.check-list {
+  display: grid;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+  color: var(--color-muted);
+}
+
+.check-list svg {
+  flex: 0 0 auto;
+  color: var(--color-healthy);
+}
+
+@media (max-width: 1080px) {
+  .guide-examples {
+    grid-template-columns: 1fr;
+  }
+
+  .step-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+}

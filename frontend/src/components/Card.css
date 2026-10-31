@@ -1,0 +1,32 @@
+.card {
+  min-width: 0;
+  padding: var(--space-lg);
+  border: var(--rule-thin) solid var(--color-rule);
+  border-radius: var(--radius-lg);
+  background: var(--color-paper);
+  box-shadow: 0 1.25rem 3.5rem var(--color-shadow);
+}
+
+.card > :not(:last-child) {
+  margin-bottom: var(--space-md);
+}
+
+.card-soft {
+  background: var(--color-paper-tint);
+}
+
+.card-success {
+  background: var(--color-healthy-soft);
+  border-color: color-mix(in oklch, var(--color-healthy) 22%, var(--color-rule));
+}
+
+.card-warning {
+  background: var(--color-unhealthy-soft);
+  border-color: color-mix(in oklch, var(--color-unhealthy) 24%, var(--color-rule));
+}
+
+@media (max-width: 620px) {
+  .card {
+    padding: var(--space-md);
+  }
+}

@@ -1,0 +1,42 @@
+.confidence-row {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.confidence-label {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.confidence-label strong {
+  color: var(--color-ink);
+}
+
+.progress-track {
+  height: 0.65rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--color-rule) 70%, var(--color-paper));
+}
+
+.progress-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  transition: width var(--dur-med) var(--ease-out);
+}
+
+.progress-healthy {
+  background: var(--color-healthy);
+}
+
+.progress-unhealthy {
+  background: var(--color-unhealthy);
+}
+
+.progress-neutral {
+  background: var(--color-info);
+}

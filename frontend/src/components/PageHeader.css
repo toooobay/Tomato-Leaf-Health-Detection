@@ -1,0 +1,18 @@
+.page-header {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 4vw, var(--text-3xl));
+}
+
+.eyebrow {
+  width: fit-content;
+  padding: var(--space-2xs) var(--space-sm);
+  border: var(--rule-thin) solid var(--color-rule);
+  border-radius: 999px;
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}

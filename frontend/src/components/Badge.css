@@ -1,0 +1,32 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  width: fit-content;
+  min-height: 1.75rem;
+  padding: 0 var(--space-sm);
+  border-radius: 999px;
+  font-size: var(--text-xs);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.badge-neutral {
+  background: var(--color-paper-tint);
+  color: var(--color-muted);
+}
+
+.badge-healthy {
+  background: var(--color-healthy-soft);
+  color: var(--color-healthy);
+}
+
+.badge-unhealthy {
+  background: var(--color-unhealthy-soft);
+  color: var(--color-unhealthy);
+}
+
+.badge-info {
+  background: var(--color-info-soft);
+  color: var(--color-info);
+}
